@@ -1,0 +1,36 @@
+.story-box {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    padding: 1.5rem;
+
+    &__picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(50%) brightness(50%);
+        z-index: -1;
+
+        &--1 {
+            background-image: url(../img/int-small-1.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/int-small-2.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/int-small-3.jpg);
+        }
+    }
+
+    &__number {
+        margin-bottom: 1.5rem;
+        font-size: 6rem;
+        font-weight: 700;
+    }
+}

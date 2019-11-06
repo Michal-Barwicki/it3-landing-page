@@ -1,0 +1,14 @@
+.header {
+    height: 80rem;
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        top: 20%;
+        left: 45%;
+
+        @include respond(phone) {
+            left: 10%;
+        }
+    }
+}

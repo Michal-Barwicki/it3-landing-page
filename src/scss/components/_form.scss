@@ -1,0 +1,21 @@
+.form-news {
+    background-color: $color-grey-dark-2;
+    padding: 1.5rem;
+    margin-top: -1.5rem;
+
+
+    @include respond(tab-port) {
+        margin-top: 1rem;
+    }
+
+    &__input[type=email] {
+        padding: 0.5rem;
+        border: 2px solid $color-white;
+        width: 60%;
+
+        &:focus {
+            border-color: skyblue;
+            outline: none;
+        }
+    }
+}

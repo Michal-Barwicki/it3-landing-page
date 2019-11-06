@@ -1,0 +1,34 @@
+.gallery {
+    &__img {
+        width: 100%;
+        vertical-align: bottom;
+        margin-top: 6rem;
+        filter: blur(1px);
+        transition: all 0.3s;
+
+        @include respond(tab-port) {
+            margin-top: 1rem;
+        }
+
+        &:hover {
+            filter: blur(0px);
+            transform: scale(1.05);
+        }
+
+        &--2 {
+            margin-top: -10rem;
+
+            @include respond(tab-port) {
+                margin-top: 1rem;
+            }
+        }
+
+        &--4 {
+            margin-bottom: 5rem;
+
+            @include respond(tab-port) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

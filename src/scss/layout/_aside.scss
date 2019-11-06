@@ -1,0 +1,50 @@
+.aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 12rem;
+    background-color: $color-grey-dark-1;
+    z-index: 50;
+
+    @include respond(tab-port) {
+        bottom: auto;
+        height: 12rem;
+        right: 0;
+        width: auto;
+    }
+
+    &__logo-box {
+        padding: 1rem;
+    }
+
+    &__logo {
+        width: 10rem;
+    }
+
+
+    &__menu-btn {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+
+        &--line-1 {
+            display: block;
+            height: 4px;
+            width: 6rem;
+            background-color: $color-white;
+            margin: 1rem auto;
+        }
+
+        &--line-2 {
+            display: block;
+            height: 4px;
+            width: 4rem;
+            background-color: $color-white;
+            margin: 1rem auto;
+        }
+    }
+}

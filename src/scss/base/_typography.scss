@@ -1,0 +1,97 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $color-grey-light-1;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+
+    &--first {
+        display: block;
+        font-size: 8rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        line-height: 100%;
+
+        @include respond(tab-port) {
+            letter-spacing: 1.5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 5rem;
+        }
+    }
+
+    &--second {
+        display: block;
+        font-size: 10rem;
+        font-weight: 800;
+        letter-spacing: 1rem;
+        line-height: 100%;
+
+        @include respond(tab-port) {
+            letter-spacing: 0.5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 6rem;
+        }
+    }
+}
+
+.heading-secondary {
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 2rem 0.5rem;
+    font-size: 6rem;
+    line-height: 100%;
+
+    &--letter {
+        font-size: 40rem;
+        font-weight: 800;
+        color: $color-grey-dark-2;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+    }
+
+    &__box {
+        position: absolute;
+        top: 6.5rem;
+        left: 27rem;
+        transform: translate(-50%, -50%);
+    }
+
+    &--light {
+        display: block;
+        font-weight: 300;
+    }
+
+    &--bold {
+        display: block;
+        font-weight: 800;
+    }
+
+    &--text {
+        font-size: $default-font-size;
+        font-weight: normal;
+        line-height: 170%;
+        text-transform: none;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+// .paragraph {
+//     font-size: $default-font-size;
+
+//     &:not(:last-child) {
+//         margin-bottom: 3rem;
+//     }
+// }

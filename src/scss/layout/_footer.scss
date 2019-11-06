@@ -1,0 +1,39 @@
+.footer {
+    position: relative;
+    background-color: $color-grey-dark-4;
+    margin-top: 8rem;
+    padding: 1.5rem 0 1.5rem 12rem;
+    width: calc(100% + 24rem);
+    transform: translate(-12rem);
+    z-index: 60;
+
+    &__contact {
+        margin-top: 1rem;
+
+        >* {
+            display: block;
+            padding-top: 1rem;
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+}
+
+.social {
+    &__list {
+        margin-top: 1rem;
+        list-style: none;
+    }
+
+    &__item {
+        color: $color-white;
+        display: inline-block;
+        padding-right: 1rem;
+        font-size: 2rem;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-grey-light-2;
+        }
+    }
+}

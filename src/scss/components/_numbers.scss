@@ -1,0 +1,22 @@
+.numbers {
+    padding-left: 5rem;
+    text-align: center;
+
+    @include respond(tab-port) {
+        padding-left: 0;
+    }
+
+    &__digits {
+        margin-top: 3rem;
+        display: block;
+        font-size: 7rem;
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    &__caption {
+        text-transform: uppercase;
+        font-size: $default-font-size;
+        font-weight: 700;
+    }
+}

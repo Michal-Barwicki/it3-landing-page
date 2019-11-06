@@ -1,0 +1,65 @@
+.btn__simple {
+
+    &,
+    &:link,
+    &:visited {
+        margin: 1.5rem 0;
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        color: $color-white;
+        font-size: $default-font-size;
+        font-weight: normal;
+        transition: all .2s;
+
+    }
+
+    &--line {
+        display: inline-block;
+        vertical-align: .5rem;
+        width: 5rem;
+        height: 1px;
+        transform: translateX(1rem);
+        background-color: $color-white;
+        transition: all .2s;
+
+    }
+
+    &:hover {
+        color: $color-grey-dark-3;
+    }
+
+    &:hover span {
+        background-color: $color-grey-dark-3;
+        transform: translateX(0);
+    }
+
+}
+
+.btn-square {
+
+    &,
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-white;
+        background-color: transparent;
+        display: inline-block;
+        text-decoration: none;
+        border: 2px solid $color-white;
+        padding: 1.5rem 2rem;
+        margin: 2rem 0;
+        transition: all .2s;
+
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-color: $color-grey-dark-3;
+        border: 2px solid $color-grey-dark-3;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

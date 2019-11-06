@@ -1,0 +1,16 @@
+.clock {
+    &__box {
+        text-align: center;
+    }
+
+    &__digits {
+        font-size: 6rem;
+        font-weight: 700;
+    }
+
+    &__caption {
+        text-transform: uppercase;
+        font-size: $default-font-size;
+        font-weight: 700;
+    }
+}
