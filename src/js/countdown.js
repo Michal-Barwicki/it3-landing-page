@@ -1,5 +1,4 @@
-export const countdown = (function () {
-    'use strict';
+export const countdown = function () {
 
     const second = 1000,
         minute = second * 60,
@@ -20,4 +19,4 @@ export const countdown = (function () {
 
     }, second)
 
-})();
+};

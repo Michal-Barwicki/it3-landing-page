@@ -1,6 +1,4 @@
-export const carouselBig = (function () {
-    'use strict';
-
+export const carouselBig = function () {
 
     const allImgs = document.querySelectorAll(".carousel-big__img");
     const allBtns = document.querySelectorAll(".carousel-big__btn");
@@ -61,4 +59,4 @@ export const carouselBig = (function () {
         allBtns[j].addEventListener("click", getId);
         allBtns[j].addEventListener("click", changeSelected);
     }
-})();
+};

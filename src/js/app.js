@@ -1,3 +1,5 @@
+'use strict';
+
 import '../scss/main.scss';
 
 import {
@@ -23,3 +25,10 @@ import {
 import {
     carouselBig
 } from './carousel_big';
+
+countdown();
+counterFromZero();
+menu();
+beginAnimation();
+carouselSmall();
+carouselBig();

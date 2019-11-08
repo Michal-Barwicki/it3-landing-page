@@ -1,5 +1,4 @@
-export const beginAnimation = (function () {
-    'use strict';
+export const beginAnimation = function () {
 
     const aboutColumns = document.querySelectorAll(".section-about .col-1-of-2");
     const galleryPhoto1 = document.querySelector(".gallery__img--1");
@@ -41,4 +40,4 @@ export const beginAnimation = (function () {
 
         }
     })
-})();
+};

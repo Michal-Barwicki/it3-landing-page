@@ -1,5 +1,4 @@
-export const menu = (function () {
-    'use strict';
+export const menu = function () {
 
     const menuBtn = document.querySelector(".aside__menu-btn");
     const menu = document.querySelector(".menu");
@@ -49,4 +48,4 @@ export const menu = (function () {
         }
     }
 
-})();
+};

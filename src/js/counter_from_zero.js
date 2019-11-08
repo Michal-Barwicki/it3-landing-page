@@ -1,5 +1,4 @@
-export const counterFromZero = (function () {
-    'use strict';
+export const counterFromZero = function () {
 
     const counters = document.querySelectorAll(".numbers__digits")
     const countersBox = document.querySelector(".numbers");
@@ -52,4 +51,4 @@ export const counterFromZero = (function () {
 
         setTimeout(animateCounter, 40, index, skip, digits);
     }
-})();
+};

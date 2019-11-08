@@ -1,5 +1,4 @@
-export const carouselSmall = (function () {
-
+export const carouselSmall = function () {
 
     const allImgs = document.querySelectorAll(".carousel-small__img");
     const img = document.querySelector(".carousel-small__img");
@@ -34,4 +33,4 @@ export const carouselSmall = (function () {
         setTimeout(changeImg, 1000);
     }
     changeImg();
-})();
+};
